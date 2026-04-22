@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Surprise</title>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("pass").value;
+      if(password === "love123") {
+        document.body.innerHTML = "<h1>🎉 Happy Birthday RAJ 🎂💖</h1>";
+      } else {
+        alert("Wrong Password!");
+      }
+    }
+  </script>
+</head>
+<body style="text-align:center; margin-top:100px;">
+  <h2>Enter Secret Password 🔐</h2>
+  <input type="password" id="pass">
+  <br><br>
+  <button onclick="checkPassword()">Open Gift 🎁</button>
+</body>
+</html>
